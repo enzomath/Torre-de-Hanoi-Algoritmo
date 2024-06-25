@@ -8,16 +8,34 @@
 </head>
 <body>
 
+    <h1>Torre de Hanói - Algoritmo  </h1>
     <form>
-       <p id="teste">
-       </p>
-       <button id="botao">
-        Colocar texto
-        </button>
+        <label for="n_aneis">Número de anéis da torre:</label>
+        <br/>
+            <input type="text" id="n_aneis" name="n_aneis">
+        <br/>
 
+        <label for="origem">Torre de Origem:</label>
+        <br/>
+            <input type="text" id="origem" name="origem">
+        <br/>
 
-    </input>
+        <label for="auxiliar">Torre Auxiliar:</label>
+        <br/>
+            <input type="text" id="auxiliar" name="auxiliar">
+        <br/>
+
+        <label for="origem">Torre de Destino:</label>
+        <br/>
+            <input type="text" id="destino" name="destino">
+        <br/>
+        <p>
+            <input type="button" value="Gerar Movimentos" id="botao"> 
+        </p>
     </form>
+    <hr/>
+    <h2>Movimentos necessários:</h2>
+    <i><p id="text"></p> </i>
 
 
     <script src="script.js"></script>

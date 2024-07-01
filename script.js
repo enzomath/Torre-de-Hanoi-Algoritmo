@@ -2,6 +2,7 @@ let inserir = document.getElementById("text");
 let array = [];
 let texto;
 
+//algoritmo que resolve a torre para n anéis
 let torre = (n, origem, auxiliar, destino) => {
   
     if(n==1){
@@ -16,7 +17,9 @@ let torre = (n, origem, auxiliar, destino) => {
      }
 
 }
+//
 
+//captura os valores do forms, chama o metodo torre e exibe os movimentos
 let PegaDados = () =>{
     array = [];
     let n = document.getElementById("n_aneis").value;

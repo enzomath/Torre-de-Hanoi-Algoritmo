@@ -28,9 +28,10 @@ let PegaDados = () =>{
     let auxiliar = document.getElementById("auxiliar").value;
    
     torre(n, origem, auxiliar, destino);
+  
     //exibir movimentos no html
     for(i=0; i<=(array.length-1); i++){
-    inserir.innerText = array.toString();
+    inserir.innerText = array[i]
     }
 }
 

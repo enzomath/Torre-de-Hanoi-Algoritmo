@@ -23,8 +23,9 @@ let torre = (n, origem, auxiliar, destino) => {
 //captura os valores do forms, chama o metodo torre e exibe os movimentos
 let PegaDados = () =>{
     array = [];
-    inserir.innerHTML = "<i>ba</i>";
-    let n = document.getElementById("n_aneis").value;
+    loop = 0;
+    inserir.innerHTML = "";
+    let n = parseInt(document.getElementById("n_aneis").value);
     let origem = document.getElementById("origem").value;
     let destino = document.getElementById("destino").value;
     let auxiliar = document.getElementById("auxiliar").value;
@@ -32,7 +33,7 @@ let PegaDados = () =>{
     torre(n, origem, auxiliar, destino);
   
     //exibir movimentos no html
-    while(loop<=array.length-1){
+    while(loop<=(array.length-1)){
       inserir.innerHTML=inserir.outerHTML+array[loop].toString()+"<br/>";
       loop++;
     }

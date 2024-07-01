@@ -33,7 +33,7 @@ let PegaDados = () =>{
   
     //exibir movimentos no html
     while(loop<=array.length-1){
-      inserir.innerHTML+=array[loop]+"<br/>";
+      inserir.innerHTML=inserir.outerHTML+array[loop].toString()+"<br/>";
       loop++;
     }
 }

@@ -23,7 +23,7 @@ let torre = (n, origem, auxiliar, destino) => {
 //captura os valores do forms, chama o metodo torre e exibe os movimentos
 let PegaDados = () =>{
     array = [];
-    inserir.innerHTML = "";
+    inserir.innerHTML = "<i>ba</i>";
     let n = document.getElementById("n_aneis").value;
     let origem = document.getElementById("origem").value;
     let destino = document.getElementById("destino").value;

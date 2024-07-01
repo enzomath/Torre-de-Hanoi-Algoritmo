@@ -25,8 +25,7 @@ let PegaDados = () =>{
     let auxiliar = document.getElementById("auxiliar").value;
    
     torre(n, origem, auxiliar, destino);
-    inserir.innerText = array;
-
+    inserir.innerText = array.toString();
 }
 
 
